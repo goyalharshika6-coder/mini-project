@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0B0F1A;
+  --color-secondary: #9ca3af;
+  --color-accent1: #3b82f6;
+  --color-accent2: #a855f7;
+}
+
+:root {
+  --primary: #0B0F1A;
+  --secondary: #9ca3af;
+  --accent1: #3b82f6;
+  --accent2: #a855f7;
+}
+
+body {
+  @apply font-sans bg-primary text-white antialiased selection:bg-cyan-500/30;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+@utility glass {
+  background-color: rgb(255 255 255 / 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 1rem;
+}
+
+@utility glass-card {
+  @apply glass transition-all duration-300;
+
+  &:hover {
+    background-color: rgb(255 255 255 / 0.1);
+    border-color: rgb(255 255 255 / 0.2);
+  }
+}
+
+@utility btn-primary {
+  @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-blue-500/25 transition-all transform flex items-center justify-center gap-2;
+
+  &:hover {
+    @apply scale-105;
+  }
+
+  &:active {
+    @apply scale-95;
+  }
+}
+
+@utility btn-secondary {
+  @apply bg-white/10 text-white border border-white/20 px-6 py-2.5 rounded-full font-semibold transition-all transform;
+
+  &:hover {
+    @apply bg-white/20 border-white/30 scale-105;
+  }
+
+  &:active {
+    @apply scale-95;
+  }
+}
+
+@utility text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-primary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/20 rounded-full hover:bg-white/40 transition-colors;
+}
