@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">🚀 SkillPath AI</h1>
+  <h1 align="center">🚀 SkillPath AI-Harshika</h1>
   <p align="center">
     <strong>AI-Powered Adaptive Learning Platform — Learn Smarter, Not Harder</strong>
   </p>
