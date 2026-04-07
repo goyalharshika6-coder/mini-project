@@ -437,7 +437,7 @@ const Landing = () => {
                         </motion.div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
-                            Learning Only What You <br className="hidden md:block" />
+                            Learn Only What You <br className="hidden md:block" />
                             Need with{' '}
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400">
                                 AI
